@@ -41,11 +41,11 @@ Usage:
 
 - Options
   - `-a algorithm` | `--algorithm=algorithm`
-    - hashing algorithm to use, support `md5`, `sha1` and `sha256`
+    - hashing algorithm to use, support `md5`, `sha1` and **_`sha256`_**
   - `-i filename` | `--in=filename`
     - name of the input file, omitting means input from `stdin`
   - `-b size` | `--buffer=size`
-    - the buffer size used to read large inputs
+    - the buffer size used to read large inputs (**_`1024KB`_**)
   - `-v | --verbose`
     - display detail operation messages during processing if specified
 

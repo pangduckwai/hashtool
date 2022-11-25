@@ -33,13 +33,13 @@ func help() string {
 		"    help    - display this message\n"+
 		" * options:\n"+
 		"    -a ALGR, --algorithm=ALGR\n"+
-		"       hashing algorithm to use, supports %v\n"+
+		"       hashing algorithm to use, supports %v (default: %v)\n"+
 		"    -i FILE, --in=FILE\n"+
 		"       name of the input file, omitting means input from stdin\n"+
 		"    -b SIZE, --buffer=SIZE\n"+
-		"       size of the read buffer (SIZE default: %vKB)\n"+
+		"       size of the read buffer (default: %vKB)\n"+
 		"    -v, --verbose\n"+
-		"       display detail operation messages during processing", aLGORITHM, bUFFER/1024)
+		"       display detail operation messages during processing", aLGORITHM, aLGORITHM[2], bUFFER/1024)
 }
 
 func algrm(algr string) (int, error) {
