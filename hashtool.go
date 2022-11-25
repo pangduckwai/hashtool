@@ -100,7 +100,7 @@ func hashing(cfg *Config) error {
 }
 
 func Version() string {
-	return "0.1.1"
+	return "0.1.0"
 }
 
 func app() string {
